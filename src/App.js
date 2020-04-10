@@ -47,7 +47,12 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        
+        <form onSubmit={this.createComponent}>
+
+        <label>
+              <input type="submit" value="Submit"/>
+          </label>
+        </form>
       </div>
     )
   }
