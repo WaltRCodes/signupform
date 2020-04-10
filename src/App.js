@@ -25,18 +25,23 @@ export default class App extends Component {
   }
 
   takeName(event){
+    this.setState({username: event.target.value});
   }
 
   takePassword(event){
+    this.setState({password: event.target.value});
   }
 
   takeAge(event){
+    this.setState({age: event.target.value});
   }
 
   takeGender(event){
+    this.setState({gender: event.target.value});
   }
 
   takeOccupation(event){
+    this.setState({occupation: event.target.value});
   }
 
   render() {
