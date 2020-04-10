@@ -53,19 +53,32 @@ export default class App extends Component {
               Username
               <input type="text" onChange={this.takeName} placeholder="username"/>
           </label>
+          <br />
           <label>
               Password
               <input type="password" onChange={this.takePassword} placeholder="password"/>
           </label>
+          <br />
           <label>
               Age
               <input type="number" onChange={this.takeAge} placeholder="age"/>
           </label>
-
+          <br />
+          <label>
+            Gender:
+              Male
+              <input type="radio" name="gender" value="Male" onChange={this.takeGender}/>
+              Female
+              <input type="radio" name="gender" value="Female" onChange={this.takeGender}/>
+              Other
+              <input type="radio" name="gender" value="Other" onChange={this.takeGender}/>
+          </label>
+          <br />
           <label>
               Occupation
               <input type="text" onChange={this.takeOccupation} placeholder="occupation"/>
           </label>
+          <br />
         <label>
               <input type="submit" value="Submit"/>
         </label>
