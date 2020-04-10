@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
-
+import Info from './components/Info';
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -10,7 +10,8 @@ export default class App extends Component {
       password: '',
       age: 0,
       gender: '',
-      occupation: '' 
+      occupation: '',
+      div: '' 
     }
 
     this.createComponent = this.createComponent.bind(this);
@@ -23,6 +24,13 @@ export default class App extends Component {
   
   createComponent(event){
     event.preventDefault();
+    this.setState({div: <Info 
+      username={this.state.username}
+      password={this.state.password}
+      age={this.state.age}
+      gender={this.state.gender}
+      occupation={this.state.occupation}
+    />});
   }
 
   takeName(event){
@@ -83,6 +91,7 @@ export default class App extends Component {
               <input type="submit" value="Submit"/>
         </label>
         </form>
+        {this.state.div}
       </div>
     )
   }
