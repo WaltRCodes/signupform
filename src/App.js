@@ -22,6 +22,7 @@ export default class App extends Component {
   }
   
   createComponent(event){
+    event.preventDefault();
   }
 
   takeName(event){
@@ -51,7 +52,7 @@ export default class App extends Component {
 
         <label>
               <input type="submit" value="Submit"/>
-          </label>
+        </label>
         </form>
       </div>
     )
