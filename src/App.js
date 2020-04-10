@@ -49,7 +49,23 @@ export default class App extends Component {
     return (
       <div>
         <form onSubmit={this.createComponent}>
+          <label>
+              Username
+              <input type="text" onChange={this.takeName} placeholder="username"/>
+          </label>
+          <label>
+              Password
+              <input type="password" onChange={this.takePassword} placeholder="password"/>
+          </label>
+          <label>
+              Age
+              <input type="number" onChange={this.takeAge} placeholder="age"/>
+          </label>
 
+          <label>
+              Occupation
+              <input type="text" onChange={this.takeOccupation} placeholder="occupation"/>
+          </label>
         <label>
               <input type="submit" value="Submit"/>
         </label>
