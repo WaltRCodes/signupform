@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Info from './components/Info';
+import Info from './Info';
 export default class Form extends Component {
   constructor(props) {
     super(props);
